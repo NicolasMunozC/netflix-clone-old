@@ -37,8 +37,8 @@ function SignIn() {
     <div className='signIn'>
         <form>
             <h1>Sign In</h1>
-            <input ref={emailRef} placeholder='Email' type='email' />
-            <input ref={passwordRef} placeholder='Pasword' type='password' />
+            <input ref={emailRef} placeholder='Email' type='email' value='test@test.com' />
+            <input ref={passwordRef} placeholder='Pasword' type='password' value='test123'/>
             <button type='submit' onClick={signIn }>Sign In</button>
             <h4>
                 <span className='signIn__gray'>New to Netflix? </span>
