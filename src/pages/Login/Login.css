@@ -1,0 +1,86 @@
+.login{
+    position: relative;
+    height: 100%;
+    background-image: url("https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login__body{
+    position: absolute;
+    top: 30% ;
+    z-index: 1;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login__body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.login__body > h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 30px ;
+}
+
+.login__body > h3 {
+    font-size: 1rem;
+    font-weight: 400; 
+    margin-bottom: 10px;
+}
+
+.login__gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+}
+
+.login__logo{
+    position: fixed;
+    left: 20px; 
+    top: 10px;
+    width: 110px;
+    object-fit: contain;
+    cursor: pointer;
+} 
+
+.login__button{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.login__input > form > input{
+    padding: 10px ;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+
+.login__getStarted{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
