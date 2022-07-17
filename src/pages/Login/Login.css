@@ -132,22 +132,27 @@
 
 .login__info > .login__TV {
     position: relative;
-    height: 300px;
+    height: 200px;
 }
 
 
 .login__info > .login__TV > video {
     position: absolute;
-    left: 57px;
-    top: 65px;
-    width: 312px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 38px;
+    width: 182px;
 }
 
 .login__info > .login__TV > img {
     position: absolute;
-    left: 0;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
     top: 0;
-    width: 430px;
+    width: 250px;
 }
 
 .login__phoneInfo{
@@ -169,7 +174,8 @@
 }
 
 .login__phoneInfo > .login__phone > img{
-    width: 430px;
+    width: 400px;
+    max-width: 80vw;
 }
 
 .login__phone > .downloadCard {
@@ -180,6 +186,7 @@
     width: 300px;
     height: 60px;
     border-radius: 10px;
+    background-color: #000;
 }
 
 .login__phone > .downloadCard > .showImg {
@@ -233,21 +240,24 @@
 
 .login__everywhere > .devices {
     position: relative;
-    height: 300px;
+    height: 250px;
 }
 
 .login__everywhere > .devices > video {
     position: absolute;
-    left: 83px;
-    top: 65px;
-    width: 260px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 25px;
+    width: 200px;
 }
 
 .login__everywhere > .devices > img {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 430px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 320px;
 }
 
 .login__kids{
@@ -270,7 +280,7 @@
 }
 
 .login__kids > img {
-    width: 400px;
+    width: 350px;
 }
 
 .login__faq{
@@ -288,7 +298,9 @@
 .login__faq > .faq__fakeButton{
     background-color: #333;
     padding: 15px 22px;
-    margin: 9px 0;
+    margin: 9px auto;
+    max-width: 400px;
+    cursor: pointer;
 }
 
 .login__faq > .faq__fakeButton > h2{
@@ -303,6 +315,7 @@
     font-size: 1.2rem;
     font-weight: 400; 
     padding: 0 80px;
+    text-align: center;
 }
 
 .login__faq > .getStarter > form {
@@ -337,11 +350,7 @@
 
 
 
-
-
-
-
-/* Mid Screens */
+/* Mid Screens IPAD */
 
 @media only screen and (min-width: 550px){
 
@@ -386,9 +395,100 @@
         margin-bottom: 30px ;
     }
 
+    .login__info > .text > h1 {
+        font-size: 2.5rem;
+    }
+
+    .login__info > .text > h2 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 30px;
+    }
+
+    .login__info > .login__TV {
+        position: relative;
+    }
+
+    .login__info > .login__TV > video {
+        width: 220px;
+        margin-top: 46px;
+    }
+    
+    .login__info > .login__TV > img {
+        width: 300px;
+    }
+
+    .login__phoneInfo > .phoneInfoText > h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .login__phoneInfo > .phoneInfoText > h2{
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .login__everywhere > .info > h1{
+        font-size: 2.5rem;
+    }
+    
+    .login__everywhere > .info > h2{
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+        
+    .login__everywhere > .devices {
+        height: 300px;
+    }
+    
+    .login__everywhere > .devices > video {
+        margin-top: 12px;
+        width: 290px;
+    }
+    
+    .login__everywhere > .devices > img {
+        width: 460px;
+    }
+
+    .login__kids{
+        height: 500px;
+    }
+
+    .login__kids > .info > h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .login__kids > .info > h2{
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+
+    .login__kids > img {
+        width: 500px;
+    }
+
+    .login__faq > h1{
+        font-size: 2.5rem;
+        padding: 0 50px;
+    }
+
+    .login__faq > .getStarter > h3 {
+        font-size: 1.2rem;
+        padding: 0 90px;
+    }
+    
+
 }
 
-@media only screen and (min-width: 950px) {
+/* GENERIC LAPTOP */
+
+@media only screen and (min-width: 1280px) {
     
     .login__gradient{
         height: 70vh; 
@@ -396,6 +496,8 @@
     }
 
     .login__body > h1 {
+        font-size: 2.8rem;
+        font-weight: 00;
         padding: 0 150px;
     }
 
@@ -416,6 +518,259 @@
         height: 61px;
         border-radius: 1px;
         font-size: 1.5rem;
+    }
+    
+    .login__info{
+        display: flex;
+        height: 400px;
+    }
+
+    .login__info > .text{
+        margin: auto 0;
+        max-width: 50%;
+    }
+
+    .login__info > .text > h1 {
+        font-size: 3rem;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    .login__info > .text > h2 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    
+    
+    .login__info > .login__TV > video {
+        margin-top: 75px;
+        margin-left: 70px;
+        width: 360px;
+    }
+    
+    .login__info > .login__TV > img {
+        width: 500px;
+    }
+
+    .login__phoneInfo{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .login__phoneInfo > .phoneInfoText{
+        text-align: left;
+        margin: auto 0;
+        width: 50%;
+    }
+
+    .login__phoneInfo > .phoneInfoText > h1{
+        font-size: 2.5rem;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    
+    .login__phoneInfo > .phoneInfoText > h2{
+        font-size: 1.5rem;
+    }
+
+    .login__phoneInfo > .login__phone > img{
+        width: 470px;
+        z-index: -1;
+        margin-left: auto;
+        margin-right: 100px;
+    }
+
+    .login__phone > .downloadCard {
+        position: absolute;
+        margin-top: -100px;
+        height: 70px;
+        z-index: 2;
+        margin-left: 80px;
+        margin-right: auto;
+    }
+
+    .login__everywhere{
+        display: flex;
+        height: 400px;
+    }
+    .login__everywhere > .info{
+        width: 50%;
+        margin: auto 0;
+        text-align: left;
+    }
+
+    .login__everywhere > .info > h1{
+        font-size: 3rem;
+        padding-left: 90px;
+    }
+    
+    .login__everywhere > .info > h2{
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding-left: 90px;
+        padding-right: 100px;
+    }
+    
+    .login__everywhere > .devices > video {
+        width: 350px;
+        margin-left: 90px;
+    }
+    
+    .login__everywhere > .devices > img {
+        width: 550px;
+    }
+
+    .login__kids{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 400px;
+
+    }
+
+    .login__kids > .info {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+    }
+
+    .login__kids > .info > h1{
+        font-size: 3rem;
+        padding-left: 80px;
+    }
+
+    .login__kids > .info > h2{
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding-left: 80px;
+        padding-right: 120px;
+    }
+
+    .login__kids > img {
+        height: 300px;
+        width: 400px;
+        margin-left: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .login__faq > .faq__fakeButton{
+        max-width: 700px;
+    }
+    .login__faq > .getStarter {
+        text-align: center;
+    }
+
+    .login__faq > .getStarter > form {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .login__faq > .getStarter > form > input{
+        width: 600px;
+    }
+    
+    .login__faq > .getStarter form > button{
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 1920px) { 
+    .login__info{
+        height: 400px;
+        padding-left: 200px;
+    }
+
+    .login__info > .text > h1 {
+        font-size: 3.4rem;
+        text-align: left;
+        padding-right: 90px;
+    }
+
+    .login__info > .text > h2 {
+        padding-right: 120px;
+        font-size: 1.8rem;
+    }
+
+    .login__phoneInfo > .phoneInfoText > h1{
+        font-size: 3.2rem;
+    }
+
+    .login__phoneInfo > .phoneInfoText > h2{
+        font-size: 1.9rem;
+        font-weight: 300;
+    }
+
+    .login__phoneInfo > .login__phone > img{
+        width: 550px;
+    }
+
+    .login__phone > .downloadCard {
+        margin-top: -130px;
+        height: 100px;
+        width: 350px;
+        z-index: 2;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    .login__phone > .downloadCard > .showImg {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .login__phone > .downloadCard > .textCard > h2 {
+        font-weight: 500;
+    }
+
+    .login__everywhere > .info > h1{
+        padding-left: 390px;
+    }
+
+    .login__everywhere > .info > h2{
+        padding-left: 400px;
+        padding-right: 20px;
+    }
+
+    .login__kids > .info {
+        width: 50%;
+    }
+
+    .login__kids > .info > h2{
+        padding-right: 300px;
+    }
+
+    .login__faq {
+        height: 900px;
+    }
+
+    .login__faq > h1 {
+        font-size: 3.2rem;
+        margin-bottom: 50px;
+    }
+
+    .login__faq > .faq__fakeButton{
+        height: 50px;
+    }
+
+    .login__faq > .faq__fakeButton > h2{
+        font-size: 1.8rem;
+    }
+
+    .login__faq > .getStarter {
+        margin-top: 50px;
+    }
+
+    .login__faq > .getStarter > form > input{
+        height: 50px;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .login__faq > .getStarter form > button{
+        height: 70px;
+        width: 200px;
+        font-size: 1.7rem;
+        padding-bottom: 10px;
     }
 
 }
