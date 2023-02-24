@@ -12,37 +12,41 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import { auth, onAuthStateChanged } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice'
+import SignIn from './components/SignIn/SignIn';
+import Login from './pages/Login/Login';
 
 
 function App() {
 
-  const user = useSelector(selectUser)
+  const [user, setUser] = React.useState(null)
 
-  const dispatch = useDispatch()
+  // const user = useSelector(selectUser)
 
-  useEffect( () => {
-    const unsubscribe = onAuthStateChanged( auth, (userCredential) => {
-      if (userCredential) {
-        dispatch(login({
-          uid: userCredential.uid,
-          email: userCredential.email
-        }))
-      } else {
-        dispatch(logout())
-      }
+  // const dispatch = useDispatch()
+
+  // useEffect( () => {
+  //   const unsubscribe = onAuthStateChanged( auth, (fakeCredentials) => {
+  //     if (fakeCredentials) {
+  //       dispatch(login({
+  //         uid: fakeCredentials.uid,
+  //         email: fakeCredentials.email
+  //       }))
+  //     } else {
+  //       dispatch(logout())
+  //     }
       
-    })
+  //   })
 
-    return unsubscribe
-  },[dispatch])
+  //   return unsubscribe
+  // },[dispatch])
 
 
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<PrivateRoute user={user} children={<Home />} />}/>
-          <Route path='/profile' element={<PrivateRoute user={user} children={<Profile />} />}/>
+          <Route path='/' element={user ? <Home setUser={setUser} /> : <Login setUser={setUser} />}/>
+          <Route path='/profile' element={user ? <Profile setUser={setUser} /> : <Navigate to='/' /> } />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </BrowserRouter>

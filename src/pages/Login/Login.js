@@ -3,7 +3,7 @@ import Footer from '../../components/Footer/Footer'
 import SignIn from '../../components/SignIn/SignIn'
 import './Login.css'
 
-function Login() {
+function Login({setUser}) {
 
     const [signIn, setSignIn] = useState(false)
 
@@ -17,7 +17,7 @@ function Login() {
                 </div>
                 <div className='login__body'>
                     {signIn ? 
-                    <SignIn />
+                    <SignIn setUser={setUser} />
                     :
                     <>
                         <h1>Unlimited movies, TV shows, and more.</h1>
@@ -65,7 +65,7 @@ function Login() {
                         <h1>stranger things</h1>
                         <h2>Download...</h2>
                     </div>
-                    <img className='downloadImg' src='https://gameplanet-53f8.kxcdn.com/media/download-digital.gif' alt=''/>
+                    <img className='downloadImg' src='/download-icon.gif' alt=''/>
 
                 </div>
 

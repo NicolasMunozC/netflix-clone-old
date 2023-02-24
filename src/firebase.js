@@ -8,8 +8,7 @@ import {
   signOut
  } from '@firebase/auth'
 
-
-const firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCYb9lP8bxTRIB6pQlMiOrU4dEUC3dhy0Q",
     authDomain: "notflix-26ca8.firebaseapp.com",
     projectId: "notflix-26ca8",

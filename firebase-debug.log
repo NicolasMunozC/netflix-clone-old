@@ -1,0 +1,216 @@
+[debug] [2022-09-19T03:08:58.361Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T03:08:58.363Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-09-19T03:08:58.364Z] CLI Version:   11.3.0
+[debug] [2022-09-19T03:08:58.364Z] Platform:      darwin
+[debug] [2022-09-19T03:08:58.364Z] Node Version:  v16.15.0
+[debug] [2022-09-19T03:08:58.365Z] Time:          Mon Sep 19 2022 00:08:58 GMT-0300 (hora de verano de Chile)
+[debug] [2022-09-19T03:08:58.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T03:08:58.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T03:08:58.433Z] > authorizing via signed-in user (nmunozc94@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nicolasmunozcaceres/Proyectos/React/notflix
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-19T03:09:06.944Z] Using project from CLI flag: notflix-26ca8
+[debug] [2022-09-19T03:09:06.946Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:09:06.948Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:09:06.948Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:09:07.035Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:09:07.035Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:09:07.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 [none]
+[debug] [2022-09-19T03:09:07.907Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 401
+[debug] [2022-09-19T03:09:07.907Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T03:09:07.907Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:09:07.936Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project notflix-26ca8. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-19T03:12:53.195Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T03:12:53.197Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-09-19T03:12:53.198Z] CLI Version:   11.3.0
+[debug] [2022-09-19T03:12:53.198Z] Platform:      darwin
+[debug] [2022-09-19T03:12:53.198Z] Node Version:  v16.15.0
+[debug] [2022-09-19T03:12:53.199Z] Time:          Mon Sep 19 2022 00:12:53 GMT-0300 (hora de verano de Chile)
+[debug] [2022-09-19T03:12:53.200Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T03:12:53.271Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T03:12:53.272Z] > authorizing via signed-in user (nmunozc94@gmail.com)
+[debug] [2022-09-19T03:12:53.272Z] [iam] checking project notflix-26ca8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-19T03:12:53.274Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:12:53.276Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:12:53.276Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:12:53.418Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:12:53.419Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:12:53.419Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions [none]
+[debug] [2022-09-19T03:12:53.419Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-19T03:12:54.212Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions 401
+[debug] [2022-09-19T03:12:54.212Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-09-19T03:12:54.213Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:12:54.214Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:12:54.214Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:12:54.214Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:12:54.251Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:12:54.251Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:12:54.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 [none]
+[debug] [2022-09-19T03:12:54.518Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 401
+[debug] [2022-09-19T03:12:54.518Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T03:12:54.518Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:12:54.547Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project notflix-26ca8. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-19T03:13:46.318Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T03:13:46.320Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-09-19T03:13:46.321Z] CLI Version:   11.3.0
+[debug] [2022-09-19T03:13:46.321Z] Platform:      darwin
+[debug] [2022-09-19T03:13:46.321Z] Node Version:  v16.15.0
+[debug] [2022-09-19T03:13:46.322Z] Time:          Mon Sep 19 2022 00:13:46 GMT-0300 (hora de verano de Chile)
+[debug] [2022-09-19T03:13:46.323Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T03:13:46.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T03:13:46.396Z] > authorizing via signed-in user (nmunozc94@gmail.com)
+[debug] [2022-09-19T03:13:46.396Z] [iam] checking project notflix-26ca8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-19T03:13:46.398Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:13:46.400Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:13:46.400Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:13:46.534Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:13:46.534Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:13:46.535Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions [none]
+[debug] [2022-09-19T03:13:46.535Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-19T03:13:47.298Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions 401
+[debug] [2022-09-19T03:13:47.299Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/notflix-26ca8:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-09-19T03:13:47.300Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:13:47.300Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:13:47.301Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:13:47.301Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:13:47.339Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:13:47.339Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:13:47.340Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 [none]
+[debug] [2022-09-19T03:13:48.160Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 401
+[debug] [2022-09-19T03:13:48.160Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T03:13:48.160Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:13:48.190Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project notflix-26ca8. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-19T03:14:17.303Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T03:14:17.305Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-09-19T03:14:17.306Z] CLI Version:   11.3.0
+[debug] [2022-09-19T03:14:17.306Z] Platform:      darwin
+[debug] [2022-09-19T03:14:17.306Z] Node Version:  v16.15.0
+[debug] [2022-09-19T03:14:17.307Z] Time:          Mon Sep 19 2022 00:14:17 GMT-0300 (hora de verano de Chile)
+[debug] [2022-09-19T03:14:17.308Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T03:14:17.380Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T03:14:17.380Z] > authorizing via signed-in user (nmunozc94@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nicolasmunozcaceres/Proyectos/React/notflix
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-19T03:14:26.629Z] Using project from CLI flag: notflix-26ca8
+[debug] [2022-09-19T03:14:26.631Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:14:26.633Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:14:26.633Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:14:26.713Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:14:26.713Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:14:26.713Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 [none]
+[debug] [2022-09-19T03:14:27.600Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 401
+[debug] [2022-09-19T03:14:27.600Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T03:14:27.601Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:14:27.632Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project notflix-26ca8. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-19T03:14:34.087Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T03:14:34.090Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-09-19T03:14:34.090Z] CLI Version:   11.3.0
+[debug] [2022-09-19T03:14:34.090Z] Platform:      darwin
+[debug] [2022-09-19T03:14:34.090Z] Node Version:  v16.15.0
+[debug] [2022-09-19T03:14:34.092Z] Time:          Mon Sep 19 2022 00:14:34 GMT-0300 (hora de verano de Chile)
+[debug] [2022-09-19T03:14:34.092Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T03:14:34.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T03:14:34.161Z] > authorizing via signed-in user (nmunozc94@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nicolasmunozcaceres/Proyectos/React/notflix
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-19T03:14:38.965Z] Using project from CLI flag: notflix-26ca8
+[debug] [2022-09-19T03:14:38.967Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T03:14:38.969Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T03:14:38.969Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:14:39.045Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T03:14:39.045Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T03:14:39.046Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 [none]
+[debug] [2022-09-19T03:14:39.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 401
+[debug] [2022-09-19T03:14:39.888Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notflix-26ca8 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T03:14:39.888Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T03:14:39.918Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project notflix-26ca8. Please make sure the project exists and your account has permission to access it.

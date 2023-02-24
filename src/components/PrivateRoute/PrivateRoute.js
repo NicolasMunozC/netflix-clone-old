@@ -1,10 +1,10 @@
 import Login from "../../pages/Login/Login"
 
 
-const PrivateRoute = ({user, children}) => {
-
+const PrivateRoute = ({user, children, setUser}) => {
+    
     if (!user) {
-        return <Login />
+        return <Login setUser={setUser} />
     }
 
     return children
