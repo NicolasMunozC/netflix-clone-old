@@ -21,7 +21,7 @@ function Banner() {
     }
 
   return (
-    <header className='banner' style={{
+    <div className='banner' style={{
         backgroundSize: "cover",
         backgroundImage: `${movie.backdrop_path !== undefined && `url('https://image.tmdb.org/t/p/original/${movie.backdrop_path}')` }`,
         backgroundPosition: "center center",
@@ -39,7 +39,7 @@ function Banner() {
         </div>
         
         <div className='banner--fadeBottom' />
-    </header>
+    </div>
   )
 }
 

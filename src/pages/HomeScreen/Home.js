@@ -4,6 +4,7 @@ import Nav from '../../components/Nav/Nav'
 import Row from '../../components/Row/Row'
 import './Home.css'
 import requests from '../../Request'
+import Footer from '../../components/Footer/Footer'
 
 function HomeScreen() {
   return (
@@ -24,7 +25,7 @@ function HomeScreen() {
       }
 
 
-
+      <Footer />
 
     </div>
   )
